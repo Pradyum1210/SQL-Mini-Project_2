@@ -1,80 +1,96 @@
-Project Description
+# 🍕 Pizza Sales Analysis Using SQL  
+### 📊 End-to-End Sales Insights from a Pizza Store Database
 
-This project focuses on analyzing a Pizza Sales Dataset using SQL to uncover insights about sales performance, customer preferences, and revenue patterns. The database contains multiple tables, including order details, pizza information, categories, and pricing.
+## 1️⃣ Project Description
 
-By writing SQL queries, the project explores sales trends across different dimensions such as time, category, and pizza type. It also applies advanced analytical techniques like cumulative revenue calculation and percentage contribution analysis.
+This project focuses on analyzing a **Pizza Sales Dataset** using SQL to uncover insights about:
 
-🎯 Objectives
+- Total sales performance  
+- Customer ordering behavior  
+- Best-selling pizzas and categories  
+- Revenue patterns across time  
 
-Understand database structure and relationships between tables.
+The database contains multiple related tables such as **orders, order details, pizzas, and pizza types**.  
+By writing SQL queries of increasing complexity, the project explores **business-critical metrics** and performs **advanced analytics** like cumulative revenue and percentage contribution.
 
-Perform data exploration to answer business questions.
+---
 
-Use SQL to calculate:
+## 2️⃣ 🎯 Objectives
 
-Total orders and revenue
+✔ Understand database structure and table relationships  
+✔ Perform data exploration to answer real business questions  
+✔ Use SQL to compute:  
+- Total orders  
+- Total revenue  
+- Best-selling pizza types  
+- Order trends by time  
+- Average daily pizza sales  
+- Revenue contribution by category and pizza type  
 
-Best-selling pizzas and categories
+✔ Apply advanced SQL techniques:  
+- Window functions  
+- Cumulative revenue analysis  
+- Percentage contribution calculations  
 
-Order distribution by time of day
+---
 
-Average daily pizza sales
+## 3️⃣ 📂 Dataset Structure
 
-Revenue trends and contribution analysis
+The dataset includes **four main tables**:
 
-📂 Dataset Structure
+### 📁 Table Overview
 
-The dataset consists of the following key tables:
+| Table Name | Description |
+|------------|-------------|
+| **orders** | Contains each order with order ID, date, and time |
+| **order_details** | Contains details of each item in an order (pizza ID, quantity) |
+| **pizzas** | Includes pizza ID, size, price, and pizza type ID |
+| **pizza_types** | Contains pizza type ID, pizza name, and category |
 
-orders → order ID, date, and time of each order
+---
 
-order_details → order line items with pizza ID and quantity
+## 4️⃣ 📝 SQL Tasks Performed
 
-pizzas → pizza ID, size, price, and pizza type ID
+### 🔹 **Basic Analysis**
+- Count total number of orders  
+- Calculate **total revenue**  
+- Identify the **highest-priced pizza**  
+- Find the **most common pizza size**  
+- List **top 5 most ordered pizza types**  
 
-pizza_types → pizza type ID, pizza name, and category
+---
 
-📝 SQL Tasks
-🔹 Basic Analysis
+### 🔹 **Intermediate Analysis**
+- Compute **total quantity sold per pizza category**  
+- Analyze **order distribution by hour of the day**  
+- Category-wise pizza distribution  
+- Calculate **average pizzas ordered per day**  
+- Identify **top 3 pizzas by revenue**  
 
-Count total number of orders placed
+---
 
-Calculate total revenue generated
+### 🔹 **Advanced Analysis**
+Includes deeper business insights:
 
-Find the highest-priced pizza
+- Calculate **percentage revenue contribution** of each pizza type  
+- Analyze **cumulative revenue growth over time**  
+- Find **top 3 pizzas by revenue within each category**  
+- Use of:  
+  - Window functions (`ROW_NUMBER`, `SUM OVER`)  
+  - Subqueries  
+  - Time-series analysis  
 
-Identify the most common pizza size
+---
 
-List top 5 most ordered pizza types
-
-🔹 Intermediate Analysis
-
-Find total quantity of pizzas sold per category
-
-Analyze order distribution by hour of the day
-
-Find category-wise distribution of pizzas
-
-Calculate average pizzas ordered per day
-
-Identify top 3 pizzas by revenue
-
-🔹 Advanced Analysis
-
-Calculate percentage contribution of each pizza type to total revenue
-
-Analyze cumulative revenue growth over time
-
-Find top 3 pizzas by revenue within each category
-
-✅ Expected Outcomes
+## 5️⃣ 📈 Expected Outcomes
 
 By completing this project, you will:
 
-Strengthen your skills in SQL joins, aggregations, and grouping
+✔ Strengthen SQL knowledge — joins, grouping, filtering, window functions  
+✔ Perform **time-based** and **revenue-based** analysis  
+✔ Convert raw operational data into **meaningful insights**  
+✔ Understand **best-selling items**, **peak ordering times**, and **category trends**  
+✔ Build a strong SQL project suitable for **GitHub portfolios**, **interviews**, and **academic submissions**
 
-Learn time-based and revenue-based analysis
+---
 
-Apply advanced SQL concepts like window functions and percentage contribution
-
-Gain the ability to transform raw sales data into meaningful business insights
